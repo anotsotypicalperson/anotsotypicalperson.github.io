@@ -12,6 +12,36 @@
 <link rel="stylesheet" type="text/css" href="css/stylesforabout.css">    
 </head>
 <body>
+    
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+    
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+    
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="https://www.facebook.com/RayXx123" target="_blank">Facebook</a>
+      <a href="https://twitter.com/Zephyr0106" target="_blank">Twitter</a>
+      <a href="http://player.me/RayXx123" target="_blank">Player.me</a>
+      <a href="https://www.instagram.com/sunray_moonlight/" target="_blank">Instagram</a>
+    </div>
+    
 	<div class="topnav" id="myTopnav">
 	  <a href="index.html" class="active">Home</a>
 	  <a href="https://vanguard2017.wordpress.com/" class="active" target="_blank">News</a>
@@ -23,6 +53,7 @@
 		<i class="fa fa-bars"></i>
 	  </a>
 	</div>
+    
     <div class="container-fluid">
         <div class="row">
             <div class="col">
@@ -41,12 +72,10 @@
                 <p>As I've stated earlier, I'm Raymund Dominic Aguanta. 19 years old.</p>
                 <p>I can play the guitar, drums, bass, a little bit of piano, ukelele and few more instruments.</p>
                 <p>I go to the University of Negros Occidental Recoletos as a Freshmen student taking up Entertainment and Multimedia Computing.</p>
-				<P>Well, In this image you can see me in my Senior High School Uniform from Negros Occidental High School<p>
+                <p>Well, In this image you can see me in my Senior High School Uniform from Negros Occidental High School</p>
 				<p>If you wanna know more about me, you can check out my main page and have fun!</p>
             </div>
         </div>
-        
-        
     </div>
 </body>
 

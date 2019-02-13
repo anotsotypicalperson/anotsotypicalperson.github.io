@@ -13,46 +13,46 @@
 </head>
 <body>
 
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="https://www.facebook.com/RayXx123" target="_blank">Facebook</a>
-  <a href="https://twitter.com/Zephyr0106" target="_blank">Twitter</a>
-  <a href="http://player.me/RayXx123" target="_blank">Player.me</a>
-  <a href="https://www.instagram.com/sunray_moonlight/" target="_blank">Instagram</a>
-</div>
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
 
-<script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-</script>
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
     
-<div class="topnav" id="myTopnav">
-  <a href="index.html" class="active">Home</a>
-  <a href="https://vanguard2017.wordpress.com/" class="active" target="_blank">News</a>
-  <span><a class="active" target="_blank" onclick="openNav()">&#9776;Contacts</a></span>
-  <a href="about.html" class="active">About Me</a>
-  <a href="https://9anime.vip/" class="active" target="_blank">Anime</a>
-  <a href="http://i.ntere.st/u/raymunddominica31281" class="active" target="_blank">Gallery</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+    
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="https://www.facebook.com/RayXx123" target="_blank">Facebook</a>
+      <a href="https://twitter.com/Zephyr0106" target="_blank">Twitter</a>
+      <a href="http://player.me/RayXx123" target="_blank">Player.me</a>
+      <a href="https://www.instagram.com/sunray_moonlight/" target="_blank">Instagram</a>
+    </div>
 
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" class="active">Home</a>
+      <a href="https://vanguard2017.wordpress.com/" class="active" target="_blank">News</a>
+      <span><a class="active" target="_blank" onclick="openNav()">&#9776;Contacts</a></span>
+      <a href="about.html" class="active">About Me</a>
+      <a href="https://9anime.vip/" class="active" target="_blank">Anime</a>
+      <a href="http://i.ntere.st/u/raymunddominica31281" class="active" target="_blank">Gallery</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
 
 <div class="bgimg-1">
   <div class="caption">
