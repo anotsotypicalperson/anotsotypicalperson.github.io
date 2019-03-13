@@ -21,8 +21,32 @@
   transition: 0.3s;
 }
 
-.sidenav a:hover {
-  color: #f1f1f1;
+#buttwo a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+#buttwo a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+#buttree a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+#buttree a:hover {
+  color: black;
+  text-decoration: none;
 }
 
 .sidenav .closebtn {
@@ -130,12 +154,12 @@ body, html {
 
 .bgimg-2 {
   background-image: url(images/megumin.png);
-  min-height: 400px;
+  min-height: 100%;
 }
 
 .bgimg-3 {
   background-image: url("images/rain.jpg");
-  min-height: 500px;
+  min-height: 100%;
 }
 
 .caption {
@@ -192,11 +216,22 @@ h3 {
 p{
     text-align: center;
 }
-#span{
-    background-color:transparent;
-    font-size:25px;
-    color: #f7f7f7;
-}
 #pos{
     position:relative;
+}
+#butone, #buttwo, #buttree {
+  background-color: transparent;
+  border: none;
+  color: #f7f7f7;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+#buttwo a:visited{
+    text-decoration: none;
+    color: color: #f7f7f7;
 }
