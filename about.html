@@ -13,17 +13,17 @@
 </head>
 <body>
     
-    <script>
-    function openNav() {
-      document.getElementById("mySidenav").style.width = "250px";
-    }
+<script>
+     function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
 
-    function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-    }
-    </script>
-    
-    <script>
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+</script>
+
+<script>
     function myFunction() {
       var x = document.getElementById("myTopnav");
       if (x.className === "topnav") {
@@ -32,27 +32,58 @@
         x.className = "topnav";
       }
     }
-    </script>
+        
+    function openGallery(id) {
+      closeAll();
+      const gallery = document.getElementById('gallery-'+id);
+      const card = document.getElementById('card-'+id);
+      gallery.classList.add('Gallery--active');
+      card.classList.add('Card--active');
+    }
+
+    function closeAll() {
+      const galleryActv = document.querySelector('.Gallery--active');
+      const cardActv = document.querySelector('.Card--active');
+      if (galleryActv) {
+        galleryActv.classList.remove('Gallery--active');
+      }
+      if (cardActv) {
+        cardActv.classList.remove('Card--active');
+      }
+    }
+</script>
     
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="https://www.facebook.com/RayXx123" target="_blank">Facebook</a>
-      <a href="https://twitter.com/Zephyr0106" target="_blank">Twitter</a>
-      <a href="http://player.me/RayXx123" target="_blank">Player.me</a>
-      <a href="https://www.instagram.com/sunray_moonlight/" target="_blank">Instagram</a>
+    <div class="topnav" id="myTopnav">
+      <a href="javascript:void(0);" class="fa fa-bars" onclick="myFunction()"></a>
+      <a href="index.html" class="active">Home</a>
+      <a data-toggle="modal" data-target="#loginModal"><span class="glyphicon glyphicon-log-in"></span>Contacts</a>
+      <a href="about.html" class="active">About Me</a>
+      <a href="https://9anime.vip/" class="active" target="_blank">Anime</a>
+      <a href="gallery.html" class="active">Gallery</a>
     </div>
     
-	<div class="topnav" id="myTopnav">
-	  <a href="index.html" class="active">Home</a>
-	  <a href="https://vanguard2017.wordpress.com/" class="active" target="_blank">News</a>
-	  <span><a class="active" target="_blank" onclick="openNav()">&#9776;Contacts</a></span>
-	  <a href="about.html" class="active">About Me</a>
-	  <a href="https://9anime.vip/" class="active" target="_blank">Anime</a>
-	  <a href="http://i.ntere.st/u/raymunddominica31281" class="active" target="_blank">Gallery</a>
-	  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-		<i class="fa fa-bars"></i>
-	  </a>
-	</div>
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            
+        <div class="modal-content">
+            
+            <div class="modal-body">
+                <div class="row1">
+                    <a href="https://www.facebook.com/RayXx123" target="_blank">Facebook</a>
+                </div>
+                <div class="row2">
+                    <a href="https://twitter.com/Zephyr0106" target="_blank">Twitter</a>
+                </div>
+                <div class="row3">
+                    <a href="http://player.me/RayXx123" target="_blank">Player.me</a>
+                </div>
+                <div class="row4">
+                    <a href="https://www.instagram.com/sunray_moonlight/" target="_blank">Instagram</a>
+                </div>                   
+            </div>
+        </div>
+        </div>
+    </div>
     
     <div class="container-fluid">
         <div class="row">
@@ -78,6 +109,13 @@
             </div>	
         </div>
     </div>
+    
+    <div class="row">
+        <div>
+            Credits to Kevin
+        </div>
+    </div>
+    
 </body>
 
 </html>
