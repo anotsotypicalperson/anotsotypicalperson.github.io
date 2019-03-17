@@ -1,3 +1,32 @@
+.row1, .row2, .row3, .row4{
+    padding: 30px 10px 30px 10px;
+    border: 50px;
+    text-align: center;
+    margin-left: 43%;
+    margin-right: 40%;
+    text-decoration: none;
+    color: white;
+}
+
+.row1 a, .row2 a, .row3 a, .row4 a{
+    color: white;
+    border: 5px;
+    border-color: black;
+}
+
+.row1 a:hover,.row2 a:hover,.row3 a:hover,.row4 a:hover{
+    text-decoration: none;
+    color: #0D196D;
+}
+
+.modal fade{
+    border-radius: 10%;
+}
+
+.modal-body{
+    background-image: linear-gradient(to bottom,#333333,#5bdae5);
+}
+
 h1{
     text-align: center; 
 }
